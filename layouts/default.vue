@@ -5,6 +5,7 @@
       :clipped="clipped"
       fixed
       app
+      temporary
     >
       <v-list>
         <v-list-item
@@ -52,7 +53,7 @@ export default {
     return {
       clipped: false,
       drawer: false,
-      fixed: false,
+      fixed: true,
       items: [
         {
           icon: 'mdi-home',
