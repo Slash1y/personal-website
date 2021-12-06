@@ -1,12 +1,33 @@
 <template>
-  <v-row justify="end" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <h1 class="justify-start">Lukas Stauersbøl</h1>
-    </v-col>
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ut facere tenetur dolor debitis, sint nihil odit possimus quam sequi velit neque! Inventore esse dignissimos perferendis, vero rerum ipsam odit.</p>
-      </v-card>
-    </v-col>
-  </v-row>
+  <v-container class="d-flex align-center">
+    <v-row justify="center">
+      <v-col cols="12" sm="8" md="6">
+        <h1 class="text-center">
+          Lukas Stauersbøl
+        </h1>
+        <text-scramble />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
+
+<script>
+import textScramble from '~/components/textScramble.vue'
+export default {
+  components: { textScramble },
+  data () {
+    return {
+    }
+  },
+
+  mounted () {
+  }
+}
+</script>
+
+<style lang='scss' scoped>
+.container {
+  width: 100%;
+  height: 100%;
+}
+</style>

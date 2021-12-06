@@ -22,8 +22,13 @@ module.exports = {
         'about',
         'index',
         'error',
-        'default'
+        'default',
+        'nav',
+        'navbar',
+        'Particles'
       ]
-    }]
+    }],
+    'prefer-const': 1,
+    'no-unused-vars': 1
   }
 }

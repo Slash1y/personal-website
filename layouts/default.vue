@@ -1,38 +1,6 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer
-      v-model="drawer"
-      :clipped="clipped"
-      fixed
-      app
-      temporary
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
-    </v-app-bar>
+    <navi-bar />
     <v-main>
       <v-container>
         <Nuxt />
@@ -41,14 +9,19 @@
     <v-footer
       :absolute="!fixed"
       app
+      class="align-center justify-center"
     >
-      <span>&copy; {{ new Date().getFullYear() }} - Lukas Stauersbøl</span>
+      <span class="">&copy; {{ new Date().getFullYear() }} - Lukas Stauersbøl</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
+import NaviBar from '~/components/NaviBar.vue'
 export default {
+  components: {
+    NaviBar
+  },
   data () {
     return {
       clipped: false,
@@ -81,3 +54,13 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.container {
+  height: 100%;
+}
+
+.v-footer {
+  background-color: transparent;
+}
+</style>
