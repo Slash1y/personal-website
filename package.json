@@ -22,7 +22,7 @@
     "lottie-web": "^5.8.1",
     "nuxt": "^2.15.7",
     "particles.vue": "^2.20.5",
-    "vuetify": "^2.5.13"
+    "vuetify": "^2.6.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
