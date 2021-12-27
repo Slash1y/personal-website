@@ -21,7 +21,7 @@
     "firebase": "^9.6.1",
     "lottie-web": "^5.8.1",
     "nuxt": "^2.15.7",
-    "particles.vue": "^2.20.5",
+    "particles.vue": "^2.20.6",
     "vuetify": "^2.5.13"
   },
   "devDependencies": {
