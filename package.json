@@ -24,7 +24,7 @@
     "nuxt": "2.15.8",
     "nuxt-storage": "^1.2.2",
     "nuxt-webpack-optimisations": "^2.1.2",
-    "particles.vue": "^2.20.5",
+    "particles.vue": "^2.41.1",
     "vuetify": "2.6.3"
   },
   "devDependencies": {
