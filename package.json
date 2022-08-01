@@ -23,7 +23,7 @@
     "lottie-web": "^5.8.1",
     "nuxt": "2.15.8",
     "nuxt-storage": "^1.2.2",
-    "nuxt-webpack-optimisations": "^2.1.2",
+    "nuxt-webpack-optimisations": "^2.2.4",
     "particles.vue": "^2.20.5",
     "vuetify": "2.6.3"
   },
